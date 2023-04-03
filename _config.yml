@@ -1,14 +1,12 @@
-title: Your awesome title
+title: Imperfect Irissio Blog - Unleash Your Inner Artist!
 author:
-  name: GitHub User
+  name: Imperfect Irissio
   email: your-email@domain.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Write an awesome description for your new site here. You can edit this line
-  in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+  Welcome to The Imperfect Irissio Blog - your ultimate source for crafting! Home to a wealth of informative and inspiring articles on all things crafting, designed to help you unleash your inner artist and create something truly special. Whether you're a seasoned crafter or just starting out, this blog is the perfect place to explore your creativity and discover new ideas. Join on our crafting journey today and let's unleash your inner artist together!
 
 # Build settings
 
