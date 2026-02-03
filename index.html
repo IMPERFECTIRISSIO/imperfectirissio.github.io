@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperfect Irissio | Unleash Your Inner Artist</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+            --accent: #a29bfe; /* Soft Iris color */
+            --accent-glow: rgba(162, 155, 254, 0.3);
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Abstract Art Background */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.6;
+            z-index: -1;
+            animation: float 10s infinite ease-in-out;
+        }
+        .orb-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: #6c5ce7; animation-delay: 0s; }
+        .orb-2 { bottom: -20%; right: -10%; width: 60vw; height: 60vw; background: #00cec9; animation-delay: -5s; }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(30px, 50px); }
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            animation: slideUp 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0 0 10px 0;
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--accent);
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg-dark);
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px var(--accent-glow);
+            background: #fff;
+        }
+
+        .btn-secondary {
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+        }
+        .btn-secondary:hover {
+            border-color: #fff;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.3);
+        }
+        .footer a { color: inherit; text-decoration: none; }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .container { padding: 20px; width: 90%; }
+            .btn-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="container">
+        <h1>Imperfect Irissio</h1>
+        <h2>Unleash Your Inner Artist!</h2>
+        
+        <p>
+            Welcome to The Imperfect Irissio - your ultimate source for crafting! 
+            Home to a wealth of informative and inspiring articles on all things crafting, 
+            designed to help you unleash your inner artist and create something truly special. 
+            Whether you're a seasoned crafter or just starting out, this is the perfect place 
+            to explore your creativity.
+        </p>
+
+        <div class="btn-group">
+            <a href="https://www.pinterest.com/imperfectirissio/" class="btn btn-primary">Join Our Journey</a>
+            <a href="privacy.html" class="btn btn-secondary">Privacy & Data</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Imperfect Irissio Media.<br>
+            <a href="privacy.html">Privacy Policy</a> • <a href="#">Terms of Service</a>
+        </div>
+    </div>
+
+</body>
+</html>
